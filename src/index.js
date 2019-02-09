@@ -1,4 +1,4 @@
-﻿import { select } from '../src/function.js';
+import { select } from './function.js';
 
 const hero = {
   name: 'Лучник',
@@ -9,21 +9,10 @@ const hero = {
   defence: 10,
   special: [
     {
-      id: 8,
-      name: 'Двойной выстрел',
-      icon: 'http://...',
-      description: 'Двойной выстрел наносит двойной урон',
+      id: 8, name: 'Двойной выстрел', icon: 'http://...', description: 'Двойной выстрел наносит двойной урон',
     },
-
-    {
-      id: 9,
-      name: 'Тройной выстрел',
-      icon: 'http://...',
-    },
-
+    { id: 9, name: 'Тройной выстрел', icon: 'http://...' },
   ],
 };
 
-
-
-console.log(select(hero, 8));
+console.log(select(hero));

@@ -1,11 +1,9 @@
-export const select = (obj, id) => {
-    for (const element of obj.special) {
-      if (element.id == id) {
-        const {
-          it, name, icon, description,
-        } = element;
-        const result = [name, icon, description];
-        return result;
-      }
-    }
-  };
+export const select = (obj) => {
+  const special = [];
+  for (const element of obj.special) {
+    const { id, icon, description = 'Описание недоступно' } = element;
+    const result = { id, icon, description };
+    special.push(result);
+  }
+  return special;
+};

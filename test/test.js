@@ -1,4 +1,4 @@
-import { select } from '../src/function.js';
+import select from '../src/function';
 
 const heroClosed = {
   name: 'Лучник',

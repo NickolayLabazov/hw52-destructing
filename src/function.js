@@ -1,4 +1,4 @@
-export const select = (obj) => {
+export default function select(obj) {
   const special = [];
   for (const element of obj.special) {
     const { id, icon, description = 'Описание недоступно' } = element;
@@ -6,4 +6,4 @@ export const select = (obj) => {
     special.push(result);
   }
   return special;
-};
+}

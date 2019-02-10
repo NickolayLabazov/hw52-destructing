@@ -55,7 +55,7 @@ test('Открытое описание', () => {
     { id: 9, icon: 'http://...', description: 'Тройной выстрел наносит тройной урон' },
   ];
   const received = select(heroOpen);
-  expect(received).toEqual(received);
+  expect(received).toEqual(expected);
 });
 
 test('Скрытое описание', () => {
@@ -64,5 +64,5 @@ test('Скрытое описание', () => {
     { id: 9, icon: 'http://...', description: 'Описание недоступно' },
   ];
   const received = select(heroClosed);
-  expect(received).toEqual(received);
+  expect(received).toEqual(expected);
 });
